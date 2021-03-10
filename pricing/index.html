@@ -1,0 +1,953 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  
+    <title>Pricing • Canberra Web Agency</title>
+ 
+  <meta content="" name="descriptison" />
+  <meta content="" name="keywords" />
+
+  <!-- Meta icons -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  
+  <!-- Load google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Raleway:wght@300;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Load vendor styles -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" 
+    crossorigin="anonymous" />
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/venobox@1.8.9/venobox/venobox.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="/master.css" />
+  <script src="/lib.js"></script>
+
+  <script src="https://kit.fontawesome.com/cb5752ccd7.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="canberra-global">
+  <style>
+#header {
+  height: 70px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  background: #fff;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
+}
+
+#header .logo h1 {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #384046;
+}
+
+#header .logo h1 a, #header .logo h1 a:hover {
+  color: #384046;
+  text-decoration: none;
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+
+@media screen and (max-width: 429px) {
+  #header #site-logo {
+    transform: scale(0.8);
+  }
+}
+
+</style>
+
+<header id="header" class="fixed-top d-flex align-items-center">
+  <div class="container d-flex align-items-center">
+
+    <div class="logo mr-auto">
+      <a href="/" title="Canberra Web Agency">
+        <img src="/img/logo.svg" alt="Canberra Web Agency" class="img-fluid" id="site-logo" />
+      </a>
+    </div>
+
+    
+
+<style>
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+  float: left;
+}
+
+.nav-menu a {
+  z-index: 100;
+  display: block;
+  position: relative;
+  color: #4f5a62;
+  padding: 12px 15px;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+}
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nav-menu .drop-down ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 30px);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: ease all 0.3s;
+}
+
+.nav-menu .drop-down:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.nav-menu .drop-down li {
+  min-width: 180px;
+  position: relative;
+}
+
+.nav-menu .drop-down ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  color: #21262a;
+  font-weight: 400;
+}
+
+.nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
+  color: var(--primary);
+}
+
+.nav-menu .drop-down > a:after {
+  content: "\ea99";
+  font-family: IcoFont;
+  padding-left: 5px;
+}
+
+.nav-menu .drop-down .drop-down ul {
+  top: 0;
+  left: calc(100% - 30px);
+}
+
+.nav-menu .drop-down .drop-down:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu .drop-down .drop-down > a {
+  padding-right: 35px;
+}
+
+.nav-menu .drop-down .drop-down > a:after {
+  content: "\eaa0";
+  font-family: IcoFont;
+  position: absolute;
+  right: 15px;
+}
+
+@media (max-width: 1366px) {
+  .nav-menu .drop-down .drop-down ul {
+    left: -90%;
+  }
+  .nav-menu .drop-down .drop-down:hover > ul {
+    left: -100%;
+  }
+  .nav-menu .drop-down .drop-down > a:after {
+    content: "\ea9d";
+  }
+}
+</style>
+
+<nav class="nav-menu d-none d-lg-block">
+  <ul>
+    
+      
+      <li class="no-active">
+        <a href="/" title="Home">Home</a>
+      </li>
+    
+      
+      <li class="no-active">
+        <a href="/services" title="Services">Services</a>
+      </li>
+    
+      
+      <li class="active">
+        <a href="/pricing" title="Pricing">Pricing</a>
+      </li>
+    
+      
+      <li class="no-active">
+        <a href="/feedback" title="Feedback">Feedback</a>
+      </li>
+    
+      
+      <li class="no-active">
+        <a href="/about" title="About us">About us</a>
+      </li>
+    
+  </ul>
+</nav>
+  </div>
+</header>
+
+  <main id="main">
+    <br />
+<br />
+
+<style>
+  .pricing {
+    width: 100%;
+    height: 100vh;
+    padding: 25px;
+    padding-top: 50px;
+    position: relative; 
+  }
+
+  .pricing:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background: linear-gradient(160deg, var(--primary) 55%, #fff 0%);
+  }
+
+  .pricing .money {
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #606060;
+  }
+
+  .pricing .card {
+    border-radius: 14px;
+    transition: 0.4s ease;
+  }
+
+  .pricing .card-body li {
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+  }
+
+  .pricing .card-header {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Raleway';
+    padding: 25px 9 !important;
+  }
+
+  .pricing .card-footer {
+    border-bottom-left-radius: 14px !important;
+    border-bottom-right-radius: 14px !important;
+    background: white !important;
+    padding: 30px 0px !important;
+  }
+
+  .pricing .card-footer a {
+    border: 1px solid var(--primary);
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .pricing .card:hover .card-footer a {
+    color: #fff;
+    background: var(--primary);
+    text-decoration: none;
+  }
+
+  .pricing .card:hover {
+    transform: translateY(-16px);
+    box-shadow: 0 0 22px #AAA;
+  }
+
+  .pricing .card-second {
+    transform: translateY(-20px);
+  }
+
+  @media(max-width: 768px) {
+    .pricing {
+      height: auto;
+      margin-top: 50px;
+
+    }
+
+    .card-second {
+      transform: translateY(0px);
+      margin: 30px 0;
+    }
+  }
+</style>
+
+<section class="pricing" id="pricingdiv">
+  <div class="container">
+    <div class="section-title">
+      <h2 class="text-white">Development Pricing</h2>
+    </div>
+    <div class="row">
+
+      
+        
+        <div class="col-lg-4 col-12 cards mt-3">
+          <div class="card">
+            <div class="card-header">Web Development</div>
+            <div class="card-body text-muted">
+              <ul>
+                <li>Starting at <span class="money">&#8377;15000</span></li>
+                <hr />
+                
+                  <li>Delivered in 15 days</li>
+                
+                  <li>Mobile Friendly Website</li>
+                
+                  <li>Domain &amp; Hosting has to be paid separately</li>
+                
+                  <li>24 x 7 Canberra&#39;s Support</li>
+                
+              </ul>
+            </div>
+            <div class="card-footer text-center">
+              <a href="/order/web-development" class="use-primary-font">Develop Now</a>
+            </div>
+          </div>
+
+        </div>
+        
+        
+        <div class="col-lg-4 col-12 cards mt-3">
+          <div class="card">
+            <div class="card-header">Digital Marketing</div>
+            <div class="card-body text-muted">
+              <ul>
+                <li>Starting at <span class="money">&#8377;10000</span> / month</li>
+                <hr />
+                
+                  <li>For Businesses or Individual</li>
+                
+                  <li>Monthly Promotions</li>
+                
+                  <li>SEO &amp; Digital Marketing</li>
+                
+                  <li>Advanced Web Analytics</li>
+                
+                  <li>24 x 7 Canberra&#39;s Support</li>
+                
+              </ul>
+            </div>
+            <div class="card-footer text-center">
+              <a href="/order/digital-marketing" class="use-primary-font">Inquire Now</a>
+            </div>
+          </div>
+
+        </div>
+        
+        
+        <div class="col-lg-4 col-12 cards mt-3">
+          <div class="card">
+            <div class="card-header">Software Development</div>
+            <div class="card-body text-muted">
+              <ul>
+                <li>Starting at <span class="money">&#8377;15000</span></li>
+                <hr />
+                
+                  <li>Delivered in 30 days</li>
+                
+                  <li>Mobile or Desktop App</li>
+                
+                  <li>Built using modern technologies</li>
+                
+                  <li>With admin support</li>
+                
+                  <li>24 x 7 Canberra&#39;s Support</li>
+                
+              </ul>
+            </div>
+            <div class="card-footer text-center">
+              <a href="/order/software-development" class="use-primary-font">Develop Now</a>
+            </div>
+          </div>
+
+        </div>
+        
+    </div>
+  </div>
+</section>
+
+<style>
+.contact .info-wrap {
+  padding: 30px;
+  background: #fff;
+  border-radius: 14px;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: var(--primary);
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #eaf4fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #384046;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #65747f;
+}
+
+.contact .info:hover i {
+  background: var(--primary);
+  color: #fff;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: var(--primary);
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: #5faee3;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>
+
+<section id="contact" class="contact section-bg">
+  <div class="container">
+    <div class="section-title">
+      <h2>Contact Us</h2>
+      <p class="text-muted">Our Customer Support Services Are The Best, With 99% Customer Satisfaction Rating</p>
+    </div>
+
+    <div class="row mt-5 justify-content-center">
+      <div class="col-lg-10">
+        <div class="info-wrap">
+          <div class="row">
+            <div class="col-lg-4 info">
+              <i class="icofont-google-map"></i>
+              <h4>Location:</h4>
+              <p><small>For Australia</small></p>
+              <address>
+                <p>4/96 Willsmere Road, Kew, Victoria-3101, Australia</p>
+              </address>
+
+              <hr />
+
+              <p><small>For India:</small></p>
+              <address>
+                <p>41-A3/A4 Hubtown, Mahesana-2</p>
+                <p>Gujarat - 384001</p>
+              </address>
+            </div>
+
+            <div class="col-lg-4 info mt-4 mt-lg-0">
+              <i class="icofont-envelope"></i>
+              <h4>Email:</h4>
+              <p><a href="mailto:canberrawebservices@gmail.com">canberrawebservices@gmail.com</a></p>
+            </div>
+
+            <div class="col-lg-4 info mt-4 mt-lg-0">
+              <i class="icofont-phone"></i>
+              <h4>Call:</h4>
+              <p><small>For Australia</small></p>
+              <p><a href="tel:+61 452 212 783" title="Firoz Khan">+61 452 212 783</a></p>
+              <p><small>For India</small></p>
+              <p><a href="tel:+91 78019 01913" title="Aftab Sipahi">+91 78019 01913</a><br /><a href="tel:+91 83206 78737" title="Sahil Belim">+91 83206 78737</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row mt-5 justify-content-center">
+      <div class="col-lg-10">
+        <form action="forms/contact.php" method="post" name="contact-form" role="form">
+          <div class="form-row">
+            <div class="col-md-6 form-group">
+              <input 
+                type="text" 
+                name="name" 
+                class="form-control" 
+                id="name" 
+                placeholder="Your Name" 
+                required />
+              <div class="validate"></div>
+            </div>
+            
+            <div class="col-md-6 form-group">
+              <input 
+                type="email" 
+                class="form-control" 
+                name="email" 
+                id="email" 
+                placeholder="Your Email" 
+                required />
+            <div class="validate"></div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <textarea 
+            class="form-control" 
+            name="message" 
+            rows="5" 
+            data-rule="required" 
+            data-msg="Please write something for us" 
+            placeholder="Message"
+            required></textarea>
+        </div>
+        <div class="text-center"><button class="btn" type="submit">Send Message</button></div>
+      </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+      document.forms['contact-form'].addEventListener('submit', function(event) {
+         event.preventDefault();
+         const form = event.target;
+   
+         const name = form.name.value;
+         const email = form.email.value;
+         const message = (form.message.value || '').trim();
+   
+         const payload = {
+            name,
+            email,
+            message
+         };
+   
+         // Initiate progress bar
+         progressbar.show(true);
+   
+         submitPayload('/contact', payload)
+         .then (function () {
+            form.reset();
+         })
+         .finally(function () {
+            // Unmount progress bar
+            progressbar.hide();
+         })
+      });
+   }());
+</script>
+  </main>
+  
+
+<style>
+#footer {
+  color: #444444;
+  font-size: 14px;
+  background: #f7fbfe;
+}
+
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: #fff;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h4 {
+  font-size: 22px;
+  margin: 0 0 30px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #777777;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: var(--primary);
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #777777;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+#footer .footer-newsletter {
+  font-size: 15px;
+}
+
+#footer .footer-newsletter h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px;
+  text-align: left;
+  border: 1px solid #b6daf2;
+}
+
+#footer .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px 2px 20px;
+  background: var(--primary);
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+  background-color: var(--primary-dark);
+}
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+  color: #444444;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: var(--primary-dark);
+  color: #fff;
+  text-decoration: none;
+}
+</style>
+
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <a href="/"><img src="/img/logo-tagline.svg" alt="Canberra Web Agency" class="img-fluid" /></a>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            
+              <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+            
+              <li><i class="bx bx-chevron-right"></i> <a href="/about">About us</a></li>
+            
+              <li><i class="bx bx-chevron-right"></i> <a href="/services">Services</a></li>
+            
+              <li><i class="bx bx-chevron-right"></i> <a href="/terms">Terms of service</a></li>
+            
+              <li><i class="bx bx-chevron-right"></i> <a href="/privacy">Privacy policy</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            
+              <li><i class="bx bx-chevron-right"></i> <a href="/order/web-development">Web Development</a></li>
+            
+              <li><i class="bx bx-chevron-right"></i> <a href="/order/software-development">Software Development</a></li>
+            
+              <li><i class="bx bx-chevron-right"></i> <a href="/order/digital-marketing">Marketing</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <div>
+            <h4>Our Partner</h4>
+            <a href="http://developar.in?utm_medium=referral&utm_source=canberrawebagency" title="developar.in">
+              <img width="180" src="https://static.developar.in/logo/combine-gray.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-md-flex py-4">
+
+    <div class="mr-md-auto text-center text-md-left">
+      <div class="copyright"><small>Copyright ©2021 Canberra Web Agency.</small></div>
+    </div>
+    <div class="social-links text-center text-md-right pt-3 pt-md-0">
+      
+        <a 
+          href="http://twitter.com/Canberrawebage1" 
+          class="twitter" 
+          title="@twitter/Canberrawebage1"
+          target="_blank"><i class="icofont-twitter"></i></a>
+      
+        <a 
+          href="https://www.facebook.com/canberrawebservices" 
+          class="facebook" 
+          title="@facebook/canberra.web.18"
+          target="_blank"><i class="icofont-facebook"></i></a>
+      
+        <a 
+          href="https://www.instagram.com/canberrawebagency" 
+          class="instagram" 
+          title="@instagram/canberrawebagency"
+          target="_blank"><i class="icofont-instagram"></i></a>
+      
+        <a 
+          href="https://www.linkedin.com/in/canberra-web-agency-pvt-ltd-799818202" 
+          class="linkedin" 
+          title="@linkedin/canberra-web-799818202"
+          target="_blank"><i class="icofont-linkedin"></i></a>
+      
+    </div>
+  </div>
+</footer>
+</body>
+
+<script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<!-- <script src="https://unpkg.com/jquery.counterup@2.1.0/jquery.counterup.min.js"></script> -->
+<script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+<script src="https://unpkg.com/venobox@1.8.9/venobox/venobox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+<script src="/main.js"></script>
+
+</html>

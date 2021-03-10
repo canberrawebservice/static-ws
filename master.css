@@ -1,0 +1,704 @@
+:root {
+  --primary: #9B59B6;
+  --primary-light: #b87dcf;
+  --primary-dark: #843ca0;
+  --primary-fr: #FFF;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #444444;
+}
+
+::selection {
+  background-color: var(--primary);
+  color: var(--primary-fr);
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: var(--primary);
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.back-to-top i:hover {
+  background: #57aae1;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 20px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-toggle i {
+  color: #384046;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  z-index: 9999;
+  overflow-y: auto;
+  background: #fff;
+  transition: ease-in-out 0.2s;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.mobile-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-nav a {
+  display: block;
+  position: relative;
+  color: #384046;
+  padding: 10px 20px;
+  font-weight: 500;
+  outline: none;
+}
+
+.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.mobile-nav .drop-down > a:after {
+  content: "\ea99";
+  font-family: IcoFont;
+  padding-left: 10px;
+  position: absolute;
+  right: 15px;
+}
+
+.mobile-nav .active.drop-down > a:after {
+  content: "\eaa1";
+}
+
+.mobile-nav .drop-down > a {
+  padding-right: 35px;
+}
+
+.mobile-nav .drop-down ul {
+  display: none;
+  overflow: hidden;
+}
+
+.mobile-nav .drop-down li {
+  padding-left: 20px;
+}
+
+.mobile-nav-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(33, 38, 42, 0.6);
+  overflow: hidden;
+  display: none;
+  transition: ease-in-out 0.2s;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: #fff;
+}
+
+p{
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #606060;
+}
+.center-div p{
+  font-size: 1.3rem;
+  padding: 10px 0 20px 0;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: #f7fbfe;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--primary);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/* Progress bar */
+
+.progress-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.progress-bar {
+  position: relative;
+  height: 6px;
+  display: block;
+  border-radius: 2px;
+  background-clip: padding-box;
+  overflow: hidden;
+  background-color: white;
+}
+
+.progress-bar .indeterminate,
+.progress-bar.primary .indeterminate {
+ background-color: var(--primary);
+}
+
+.progress-bar.white .indeterminate {
+  background-color: #FFF;
+}
+
+.progress-bar .indeterminate:before {
+ content: "";
+ position: absolute;
+ background-color: inherit;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ will-change: left, right;
+ -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+ animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+}
+
+.progress-bar .indeterminate:after {
+ content: "";
+ position: absolute;
+ background-color: inherit;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ will-change: left, right;
+ -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+ animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+ -webkit-animation-delay: 1.15s;
+ animation-delay: 1.15s;
+}
+
+@-webkit-keyframes indeterminate {
+ 0% {
+    left: -35%;
+    right: 100%;
+ }
+
+ 60% {
+    left: 100%;
+    right: -90%;
+ }
+
+ 100% {
+    left: 100%;
+    right: -90%;
+ }
+}
+
+@keyframes indeterminate {
+ 0% {
+    left: -35%;
+    right: 100%;
+ }
+
+ 60% {
+    left: 100%;
+    right: -90%;
+ }
+
+ 100% {
+    left: 100%;
+    right: -90%;
+ }
+}
+
+@-webkit-keyframes indeterminate-short {
+ 0% {
+    left: -200%;
+    right: 100%;
+ }
+
+ 60% {
+    left: 107%;
+    right: -8%;
+ }
+
+ 100% {
+    left: 107%;
+    right: -8%;
+ }
+}
+
+@keyframes indeterminate-short {
+ 0% {
+    left: -200%;
+    right: 100%;
+ }
+
+ 60% {
+    left: 107%;
+    right: -8%;
+ }
+
+ 100% {
+    left: 107%;
+    right: -8%;
+ }
+}
+
+
+/*--------------------------------------------------------------
+# Subscribe
+--------------------------------------------------------------*/
+.Subscribe {
+  padding: 60px 0;
+}
+
+.Subscribe #Subscribe-flters {
+  padding: 0;
+  margin: 0 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+
+.Subscribe #Subscribe-flters li {
+  cursor: pointer;
+  margin: 0 15px 15px 0;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #444444;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: #fff;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.Subscribe #Subscribe-flters li:hover, .Subscribe #Subscribe-flters li.filter-active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.Subscribe #Subscribe-flters li:last-child {
+  margin-right: 0;
+}
+
+.Subscribe .Subscribe-wrap {
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.Subscribe .Subscribe-wrap:hover {
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+}
+
+.Subscribe .Subscribe-item {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+}
+
+.Subscribe .Subscribe-item figure {
+  background: #000;
+  overflow: hidden;
+  height: 240px;
+  position: relative;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+}
+
+.Subscribe .Subscribe-item figure:hover img {
+  opacity: 0.4;
+  transition: .4s;
+}
+
+.Subscribe .Subscribe-item figure .link-preview, .Subscribe .Subscribe-item figure .link-details {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  line-height: 0;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all .2s linear;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.Subscribe .Subscribe-item figure .link-preview i, .Subscribe .Subscribe-item figure .link-details i {
+  color: #384046;
+  line-height: 0;
+}
+
+.Subscribe .Subscribe-item figure .link-preview:hover, .Subscribe .Subscribe-item figure .link-details:hover {
+  background: var(--primary);
+}
+
+.Subscribe .Subscribe-item figure .link-preview:hover i, .Subscribe .Subscribe-item figure .link-details:hover i {
+  color: #fff;
+}
+
+.Subscribe .Subscribe-item figure .link-preview {
+  left: calc(50% - 38px);
+  top: calc(50% - 18px);
+}
+
+.Subscribe .Subscribe-item figure .link-details {
+  right: calc(50% - 38px);
+  top: calc(50% - 18px);
+}
+
+.Subscribe .Subscribe-item figure:hover .link-preview {
+  opacity: 1;
+  left: calc(50% - 44px);
+}
+
+.Subscribe .Subscribe-item figure:hover .link-details {
+  opacity: 1;
+  right: calc(50% - 44px);
+}
+
+.Subscribe .Subscribe-item .Subscribe-info {
+  background: #fff;
+  text-align: center;
+  padding: 30px;
+  height: 90px;
+  border-radius: 0 0 3px 3px;
+}
+
+.Subscribe .Subscribe-item .Subscribe-info h4 {
+  font-size: 18px;
+  line-height: 1px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  padding-bottom: 0;
+}
+
+.Subscribe .Subscribe-item .Subscribe-info h4 a {
+  color: #333;
+}
+
+.Subscribe .Subscribe-item .Subscribe-info h4 a:hover {
+  color: var(--primary);
+}
+
+.Subscribe .Subscribe-item .Subscribe-info p {
+  padding: 0;
+  margin: 0;
+  color: #b8b8b8;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 40px 0;
+  margin-top: 70px;
+}
+
+.breadcrumbs h2 {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+.breadcrumbs ol li + li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #4f5a62;
+  content: "/";
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+  .breadcrumbs ol {
+    display: block;
+  }
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
+
+/*--------------------------------------------------------------
+# Subscribe Details
+--------------------------------------------------------------*/
+.Subscribe-details {
+  padding-top: 0;
+}
+
+.Subscribe-details .Subscribe-details-container {
+  position: relative;
+}
+
+.Subscribe-details .Subscribe-details-carousel {
+  position: relative;
+  z-index: 1;
+}
+
+.Subscribe-details .Subscribe-details-carousel .owl-nav, .Subscribe-details .Subscribe-details-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: left;
+}
+
+.Subscribe-details .Subscribe-details-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.Subscribe-details .Subscribe-details-carousel .owl-dot.active {
+  background-color: var(--primary) !important;
+}
+
+.Subscribe-details .Subscribe-info {
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.Subscribe-details .Subscribe-info h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.Subscribe-details .Subscribe-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.Subscribe-details .Subscribe-info ul li + li {
+  margin-top: 10px;
+}
+
+.Subscribe-details .Subscribe-description {
+  padding-top: 50px;
+}
+
+.Subscribe-details .Subscribe-description h2 {
+  width: 50%;
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.Subscribe-details .Subscribe-description p {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .Subscribe-details .Subscribe-description h2 {
+    width: 100%;
+  }
+  .Subscribe-details .Subscribe-info {
+    position: static;
+    margin-top: 30px;
+  }
+}
+
+.btn {
+  border-radius: 25px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border: none;
+  font-family: 'Raleway';
+  background-color: var(--primary);
+  color: var(--primary-fr);
+}
+.btn:hover {
+  color: var(--primary-fr);
+  background-color: var(--primary-dark);
+}
+.btn:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.use-primary-font {
+  font-family: 'Raleway', sans-serif;
+}
+.use-secondary-font {
+  font-family: 'Inter', Arial;
+}
+
+.form-control {
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'Raleway', sans-serif;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #e2e2e2;
+}
+.form-control::placeholder {
+  color: #999;
+}
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: none;
+}
+
+.badge {
+  border-radius: 25px;
+}
+.badge-primary {
+  background-color: var(--primary);
+  color: var(--primary-fr);
+}
+
+.hero-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 340px;
+}
+.hero-message .icon {
+  padding: 1.4rem;
+}
+.hero-message .icon i {
+  font-size: 4rem;
+}
